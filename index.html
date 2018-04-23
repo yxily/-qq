@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>和记租车</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="css/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="header">
+		<div class="common clear">
+		<a  class="logo" href="#"><img src="images/logo.png"></a>
+		<div class="header_link">
+		<a href="#">登录</a>|<a href="#">免费注册</a>|<a href="#">关于和记</a>|<a href="#">帮助中心</a>|<a href="#"><img src="images/qqtalk.png" alt="qq交谈"></a>
+		</div><a class="tel" href="#">
+		<img src="images/tel.png" alt="tel"></a></div>
+	</div>
+		<div class="nav">
+		<ul class="common clear">
+			<li class="active"><a href="">网站首页</a></li>
+			<li><a href="">企业包车</a></li>
+			<li><a href="">商务用车</a></li>
+			<li><a href="">婚庆用车</a></li>
+			<li><a href="">代驾租车</a></li>
+			<li><a href="">自驾租车</a></li>
+			<li><a href="">旅游用车</a></li>
+			<li><a href="">车型查询</a></li>
+			<li><a href="">特惠活动</a></li>
+		</ul>
+	</div>
+	<!--<div class="banner">
+		<a class="bannera" href="#"><img src="images/banner.png" alt="banner"></a>
+	</div>-->
+<script type="text/javascript">
+		$(function(){
+			$(".order li").bind('click mouseover',function(event){
+				var a=$(this).attr('id');
+				if(a != 'ord_active'){
+					$('#ord_active').attr('id','');
+					$(this).attr('id','ord_active');
+					$("#zxdc").toggle();
+					$("#cxfl").toggle();
+				}
+			});
+		})
+	</script>
+
+
+
+
+
+<div class="banner2">
+		<div class="common relative">
+			<div class="order">
+				<ul class="clear">
+					<li id="ord_active">在线订车</li>
+					<li>车型分类</li>
+				</ul>
+				<div id="zxdc" class="zxdc">
+					<p>取车地点：<select id="ord1">
+						<option>青岛市宁夏路89号</option>
+						</select></p>
+					<p>还车地点：<select id="ord2">
+						<option>青岛市宁夏路89号</option>
+						</select></p>
+					<p>取车时间：<select id="ord3">
+						<option>2014-08-11</option>
+						</select><select id="ord4">
+						<option>13:00</option></select></p>
+					<p>还车时间：<select id="ord5">
+						<option>2014-08-11</option>
+						</select><select id="ord6">
+						<option>13:00</option></select></p>
+						<p id="ordbut"><input type="button" value="立 即 订 车"></p>
+				</div>
+				<div id="cxfl" class="zxdc hide">
+					<p>选择车型：<select id="ord1">
+						<option>轿车</option></select></p>
+					<p>选择车型：<select id="ord2">
+						<option>凯迪拉克</option></select></p>
+					<p>取车时间：<select id="ord3">
+						<option>2014-08-11</option>
+						</select><select id="ord4">
+						<option>13:00</option></select></p>
+					<p>还车时间：<select id="ord5">
+						<option>2014-08-11</option>
+						</select><select id="ord6">
+						<option>13:00</option></select></p>
+					<p id="ordbut"><input type="button" value="立 即 订 车"></p>
+				</div>
+			</div>
+		<a href=""></a>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="m_top">
+		<div class="common clear">
+			<div class="m_t_l">
+			<div class="title clear">
+				<h2>热门车型</h2>
+				<a href="#">更多+</a>
+			</div>
+			<div class="rmcx">
+				<ul>
+					<li><a href="#"><img src="images/hot_car.png"></a><p><a href="#">丰田凯美瑞/5座/三厢</a></p></li>
+					<li><a href="#"><img src="images/hot_car2.gif"></a><p><a href="#">别克君威/5座/三厢</a></p></li>
+					<li class="rmcx_end"><a href="#"><img src="images/hot_car3.gif"></a><p><a href="#">江淮瑞风/8座/两厢</a></p></li>
+				</ul>
+			</div>
+			</div>
+			<div class="m_t_r">
+				<div class="title clear"><h2>特色服务</h2><a href="#">更多+</a></div>
+				<div class="tsfw">
+					<a id="t_dj" href="#">代 驾</a>
+					<a id="t_hc" href="#">婚车服务</a>
+					<a id="t_hy" href="#">会议包车</a>
+					<a id="t_jj" href="#">接机</a>
+					<a id="t_sj" href="#">送机</a>
+					<a id="t_qy" href="#">企业包车</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="common">
+			<div class="m_mid"><img src="images/process.png"/></div>
+		</div>
+
+<div class="m_b">
+	<div class="common clear">
+		<div class="m_b_l">
+			<div class="title clear">
+				<h2>特惠活动</h2>
+				<a href="#">更多+</a>
+			</div>
+			<div class="thhd">
+				<ul>
+				<li>
+					<a href="#"><img src="images/big.png"></a><p><a href="#">会员专享特权</a></p>
+				</li>
+				<li>
+					<a href="#"><img src="images/small.png"></a><p><a href="#">国庆节租六赠一</a></p>
+				</li>
+				<li>
+					<a href="#"><img src="images/small2.gif"></a><p><a href="#">中秋节租二赠一</a></p>
+				</li>
+				<li>
+					<a href="#"><img src="images/small3.gif"></a><p><a href="#">端午节租二赠一</a></p>
+				</li>
+				<li>
+					<a href="#"><img src="images/small4.gif"></a><p><a href="#">清明节租二赠一</a></p>
+				</li>
+				</ul>
+			</div>
+			</div>
+		<div class="m_b_r">
+			<div class="title clear">
+				<h2>租车常识</h2>
+				<a href="#">更多+</a>
+			</div>
+			<div class="zccs">
+			<ul>
+				<li><a href="#">青岛租车需要的手续有哪些？</a></li>
+				<li><a href="#">租车过程中车辆出现故障如何处理？</a></li>
+				<li><a href="#">提前还车，怎么办？</a></li>
+				<li><a href="#">长期租车会员有什么优惠？</a></li>
+				<li><a href="#">外地人租车需要准备什么？</a></li>
+				<li><a href="#">和记租车有代驾么？</a></li>
+				<li><a href="#">外地人租车需要准备什么？</a></li>
+				<li><a href="#">和记租车有代驾么？</a></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="hots">
+	<div class="common">
+			<div class="title clear">
+				<h2>热点链接</h2>
+				<a href="#">更多+</a>
+			</div>
+			<div class="rd">
+				<a id="rd_fir" href="#">增值业务</a>|<a href="#">网站地图</a>|<a href="#">和记博客</a>
+			</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="common">
+		<div class="f_top">
+			<dl>
+				<dt>关于和记</dt>
+				<dd><a href="#">公司简介</a></dd>
+				<dd><a href="#">企业文化</a></dd>
+				<dd><a href="#">企业荣誉</a></dd>
+			</dl>
+			<dl>
+				<dt>新手上路</dt>
+				<dd><a href="#">如何注册用户</a></dd>
+				<dd><a href="#">预定演示</a></dd>
+				<dd><a href="#">取消及修改订单</a></dd>
+			</dl>
+			<dl>
+				<dt>售后服务</dt>
+				<dd><a href="#">建议专区</a></dd>
+				<dd><a href="#">客户投诉</a></dd>
+			</dl>
+			<dl>
+				<dt>会员服务</dt>
+				<dd><a href="#">忘记密码</a></dd>
+				<dd><a href="#">积分说明</a></dd>
+			</dl>
+			<dl>
+				<dt>联系我们</dt>
+				<dd>地址：青海市宁夏路89号210室（五星电气院内）</dd>
+				<dd>电话：0352-83781666   83781888</dd>
+				<dd>手机：15605320788</dd>
+			</dl>
+			<img src="images/qr.png" alt="二维码">
+		</div>
+		<div class="f_mid">
+			Copyright &copy; 2014-2015 青岛和记汽车服务有限公司 版权所有       鲁ICP备14005716号 <span class="b_m_2"><a id="beian" href="#">版权声明</a>|<a href="">站长统计</a></span>
+		</div>
+		<div class="f_bot">
+			<strong>友情链接：</strong>
+			<a href="#">青岛租车</a>|
+			<a href="#">青岛租车租赁</a>|
+			<a href="#">青岛婚庆租车</a>|
+			<a href="#">青岛包车</a>
+		</div>
+	</div>
+</div>
+	</body>
+	</html>
